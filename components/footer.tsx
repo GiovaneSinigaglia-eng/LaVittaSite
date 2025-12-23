@@ -3,7 +3,7 @@
 import { Facebook, Instagram, Mail, MapPin, MessageCircle, Phone, Sparkles } from "lucide-react"
 import Link from "next/link"
 
-const whatsappNumber = ""
+const whatsappNumber = "11988374400"
 const message = "Olá! Vim através do site da La Vitta Cosmética."
 const encodedMessage = encodeURIComponent(message)
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
@@ -23,10 +23,10 @@ export default function Footer() {
             Sua satisfação é nossa prioridade.
           </p>
           <div className="flex space-x-4">
-            <Link href="#" className="text-foreground transition-colors hover:text-primary">
+            {/* <Link href="#" target="_blank" className="text-foreground transition-colors hover:text-primary">
               <Facebook className="h-5 w-5 sm:h-6 sm:w-6" />
-            </Link>
-            <Link href="#" className="text-foreground transition-colors hover:text-primary">
+            </Link> */}
+            <Link href="https://www.instagram.com/lavittacosmetica/" target="_blank" className="text-foreground transition-colors hover:text-primary">
               <Instagram className="h-5 w-5 sm:h-6 sm:w-6" />
             </Link>
           </div>
@@ -100,9 +100,10 @@ export default function Footer() {
               <MessageCircle className="mt-1 h-4 w-4 flex-shrink-0" />
               <a
                 href={whatsappUrl}
+                target="_blank"
                 className="cursor-pointer break-all transition-colors hover:text-primary"
               >
-                (11) 99999-9999 - WhatsApp
+                (11) 98837-4400 - WhatsApp
               </a>
             </li>
           </ul>

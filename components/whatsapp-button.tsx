@@ -17,7 +17,7 @@ export default function WhatsAppButton({
   variant = "floating",
   size = "md",
 }: WhatsAppButtonProps) {
-  const phoneNumber = "5511999999999" // Número da Giga Cosmética
+  const phoneNumber = "11988374400" // Número da lavitta Cosmética
 
   const handleWhatsAppClick = () => {
     const encodedMessage = encodeURIComponent(message)

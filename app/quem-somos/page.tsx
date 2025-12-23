@@ -671,7 +671,7 @@ export default function QuemSomos() {
               size="lg"
               message="Olá! Acabei de conhecer a história da La Vitta Cosmética e gostaria de saber mais."
               className="bg-white text-green-600 hover:bg-stone-50"
-            />
+              />       
             <Button
               asChild
               size="lg"
