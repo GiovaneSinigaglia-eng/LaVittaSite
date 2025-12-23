@@ -1,0 +1,27 @@
+{
+	"editor.codeActionsOnSave": {
+		// Autoformatação ao salvar o arquivo
+		"source.fixAll.eslint": "explicit",
+	},
+
+
+	"files.associations": {
+		// Recomendado pela extensão Tailwind CSS IntelliSense
+  		"*.css": "tailwindcss"
+	},
+
+	// Usar a versão do Typescript que vem com o Next.js:
+	// https://nextjs.org/docs/app/api-reference/config/typescript#ide-plugin
+	"typescript.tsdk": "node_modules\\typescript\\lib",
+
+	"[typescriptreact]": {
+		// Editar ou renomear uma tag edita o correspondente dela ao mesmo tempo
+		"editor.linkedEditing": true,
+	},
+
+	"[tailwindcss]": {
+		"editor.quickSuggestions": {
+			"strings": "on"
+		}
+	}
+}
