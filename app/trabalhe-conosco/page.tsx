@@ -8,8 +8,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { useLanguage } from "@/hooks/use-language"
 
 export default function TrabalheConosco() {
+  const { t } = useLanguage()
+
   const [formData, setFormData] = useState({
     nome: "",
     cpf: "",
@@ -93,13 +96,10 @@ export default function TrabalheConosco() {
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
                 <CheckCircle className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-stone-900">Candidatura Enviada!</h3>
-              <p className="mb-6 text-stone-600">
-                Obrigado por enviar seu currículo! Nossa equipe de RH analisará suas informações e
-                entrará em contato se houver uma oportunidade adequada.
-              </p>
+              <h3 className="mb-4 text-2xl font-bold text-stone-900">{t("careers.modal.title")}</h3>
+              <p className="mb-6 text-stone-600">{t("careers.modal.message")}</p>
               <Button onClick={closeSuccessModal} className="w-full bg-red-600 hover:bg-red-700">
-                Fechar
+                {t("careers.modal.button")}
               </Button>
             </div>
           </div>
@@ -120,16 +120,14 @@ export default function TrabalheConosco() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="mb-6 inline-block rounded-full bg-primary/10 px-4 py-2">
-              <span className="text-sm font-semibold text-primary">
-                💼 Oportunidades de carreira
-              </span>
+              <span className="text-sm font-semibold text-primary">{t("careers.hero.badge")}</span>
             </div>
             <h1 className="mb-4 text-3xl font-bold text-stone-900 sm:mb-6 sm:text-4xl lg:text-5xl">
-              Trabalhe <span className="giga-text-gradient">Conosco</span>
+              {t("careers.hero.title")}{" "}
+              <span className="giga-text-gradient">{t("careers.hero.highlight")}</span>
             </h1>
             <p className="mx-auto max-w-3xl text-base text-stone-600 sm:text-lg lg:text-xl">
-              Faça parte da equipe La Vitta Cosmética! Preencha o formulário abaixo e envie seu
-              currículo.
+              {t("careers.hero.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -145,10 +143,11 @@ export default function TrabalheConosco() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              Por que trabalhar <span className="text-primary">conosco?</span>
+              {t("careers.benefits.title")}{" "}
+              <span className="text-primary">{t("careers.benefits.highlight")}</span>
             </h2>
             <p className="mx-auto max-w-2xl text-base text-stone-600 sm:text-lg">
-              Venha fazer parte de uma equipe apaixonada pela beleza e inovação
+              {t("careers.benefits.subtitle")}
             </p>
           </div>
 
@@ -156,26 +155,26 @@ export default function TrabalheConosco() {
             {[
               {
                 icon: Briefcase,
-                title: "Oportunidades",
-                description: "Crescimento profissional em ambiente dinâmico",
+                title: t("careers.benefits.items.opportunities.title"),
+                description: t("careers.benefits.items.opportunities.description"),
                 color: "primary",
               },
               {
                 icon: Users,
-                title: "Equipe Unida",
-                description: "Trabalhe com profissionais experientes e dedicados",
+                title: t("careers.benefits.items.team.title"),
+                description: t("careers.benefits.items.team.description"),
                 color: "rose",
               },
               {
                 icon: Lightbulb,
-                title: "Inovação",
-                description: "Tecnologia de ponta e processos modernos",
+                title: t("careers.benefits.items.innovation.title"),
+                description: t("careers.benefits.items.innovation.description"),
                 color: "amber",
               },
               {
                 icon: Heart,
-                title: "Cuidado",
-                description: "Ambiente que valoriza cada colaborador",
+                title: t("careers.benefits.items.care.title"),
+                description: t("careers.benefits.items.care.description"),
                 color: "red",
               },
             ].map((benefit, index) => {
@@ -214,16 +213,14 @@ export default function TrabalheConosco() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <Card className="border-2 shadow-xl">
             <CardHeader>
-              <CardTitle className="text-2xl text-stone-900">Envie seu Currículo</CardTitle>
-              <p className="text-stone-600">
-                Preencha seus dados e envie seu currículo para nossa equipe de RH.
-              </p>
+              <CardTitle className="text-2xl text-stone-900">{t("careers.form.title")}</CardTitle>
+              <p className="text-stone-600">{t("careers.form.description")}</p>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="nome" className="mb-2 block text-sm font-medium text-stone-700">
-                    Nome Completo *
+                    {t("careers.form.fields.name")} *
                   </label>
                   <Input
                     id="nome"
@@ -231,13 +228,13 @@ export default function TrabalheConosco() {
                     required
                     value={formData.nome}
                     onChange={handleChange}
-                    placeholder="Seu nome completo"
+                    placeholder={t("careers.form.placeholders.name")}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="cpf" className="mb-2 block text-sm font-medium text-stone-700">
-                    CPF *
+                    {t("careers.form.fields.cpf")} *
                   </label>
                   <Input
                     id="cpf"
@@ -245,7 +242,7 @@ export default function TrabalheConosco() {
                     required
                     value={formData.cpf}
                     onChange={handleChange}
-                    placeholder="Digite seu CPF"
+                    placeholder={t("careers.form.placeholders.cpf")}
                   />
                 </div>
 
@@ -254,7 +251,7 @@ export default function TrabalheConosco() {
                     htmlFor="dataNascimento"
                     className="mb-2 block text-sm font-medium text-stone-700"
                   >
-                    Data de Nascimento *
+                    {t("careers.form.fields.birthdate")} *
                   </label>
                   <Input
                     id="dataNascimento"
@@ -271,7 +268,7 @@ export default function TrabalheConosco() {
                     htmlFor="endereco"
                     className="mb-2 block text-sm font-medium text-stone-700"
                   >
-                    Endereço Completo *
+                    {t("careers.form.fields.address")} *
                   </label>
                   <Input
                     id="endereco"
@@ -279,7 +276,7 @@ export default function TrabalheConosco() {
                     required
                     value={formData.endereco}
                     onChange={handleChange}
-                    placeholder="Rua, número, bairro, cidade"
+                    placeholder={t("careers.form.placeholders.address")}
                   />
                 </div>
 
@@ -289,7 +286,7 @@ export default function TrabalheConosco() {
                       htmlFor="email"
                       className="mb-2 block text-sm font-medium text-stone-700"
                     >
-                      E-mail *
+                      {t("careers.form.fields.email")} *
                     </label>
                     <Input
                       id="email"
@@ -298,7 +295,7 @@ export default function TrabalheConosco() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="seu@email.com"
+                      placeholder={t("careers.form.placeholders.email")}
                     />
                   </div>
                   <div>
@@ -306,14 +303,14 @@ export default function TrabalheConosco() {
                       htmlFor="telefone"
                       className="mb-2 block text-sm font-medium text-stone-700"
                     >
-                      Telefone
+                      {t("careers.form.fields.phone")}
                     </label>
                     <Input
                       id="telefone"
                       name="telefone"
                       value={formData.telefone}
                       onChange={handleChange}
-                      placeholder="(11) 99999-9999"
+                      placeholder={t("careers.form.placeholders.phone")}
                     />
                   </div>
                 </div>
@@ -323,14 +320,14 @@ export default function TrabalheConosco() {
                     htmlFor="mensagem"
                     className="mb-2 block text-sm font-medium text-stone-700"
                   >
-                    Mensagem (opcional)
+                    {t("careers.form.fields.message")}
                   </label>
                   <Textarea
                     id="mensagem"
                     name="mensagem"
                     value={formData.mensagem}
                     onChange={handleChange}
-                    placeholder="Fale brevemente sobre você"
+                    placeholder={t("careers.form.placeholders.message")}
                     className="min-h-[120px]"
                   />
                 </div>
@@ -340,7 +337,7 @@ export default function TrabalheConosco() {
                     htmlFor="curriculo"
                     className="mb-2 block text-sm font-medium text-stone-700"
                   >
-                    Link do Currículo (Google Drive) *
+                    {t("careers.form.fields.resume")} *
                   </label>
                   <Input
                     id="curriculo"
@@ -349,14 +346,10 @@ export default function TrabalheConosco() {
                     required
                     value={formData.curriculo || ""}
                     onChange={handleChange}
-                    placeholder="https://drive.google.com/file/d/SEU_ARQUIVO/view?usp=sharing"
+                    placeholder={t("careers.form.placeholders.resume")}
                     className="w-full rounded-lg border border-stone-300 bg-white px-4 py-3 text-stone-900 placeholder-stone-500 focus:border-transparent focus:ring-2 focus:ring-red-500"
                   />
-                  <p className="mt-2 text-sm text-stone-500">
-                    Para compartilhar seu currículo, faça o upload do arquivo no Google Drive,
-                    clique com o botão direito sobre o arquivo, selecione &quot;Compartilhar&quot;,
-                    depois &quot;Qualquer pessoa com o link&quot; e copie o link aqui.
-                  </p>
+                  <p className="mt-2 text-sm text-stone-500">{t("careers.form.instructions")}</p>
                 </div>
 
                 <Button
@@ -364,7 +357,7 @@ export default function TrabalheConosco() {
                   disabled={isSubmitting}
                   className="w-full bg-red-600 hover:bg-red-700"
                 >
-                  {isSubmitting ? "Enviando..." : "Enviar Currículo"}
+                  {isSubmitting ? t("careers.form.submitting") : t("careers.form.submit")}
                 </Button>
               </form>
             </CardContent>

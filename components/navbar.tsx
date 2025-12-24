@@ -5,18 +5,21 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 
+import { LanguageSwitcher } from "@/components/language-switcher"
 import { Button } from "@/components/ui/button"
+import { useLanguage } from "@/hooks/use-language"
 import logoLavitta from "@/public/logo_lavitta.png"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const { t } = useLanguage()
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/quem-somos", label: "Quem Somos" },
-    { href: "/midia", label: "Mídia" },
-    { href: "/contato", label: "Contato" },
-    { href: "/trabalhe-conosco", label: "Trabalhe conosco" },
+    { href: "/", label: t("nav.home") },
+    { href: "/quem-somos", label: t("nav.about") },
+    { href: "/midia", label: t("nav.media") },
+    { href: "/contato", label: t("nav.contact") },
+    { href: "/trabalhe-conosco", label: t("nav.careers") },
   ]
 
   return (
@@ -26,19 +29,19 @@ export default function Navbar() {
         <Link href="/" className="flex items-center space-x-2 sm:space-x-3">
           <Image
             src={logoLavitta}
-            alt="Logo La Vitta Cosmética"
+            alt={t("nav.logoAlt")}
             width={300}
             height={300}
             className="h-16 w-auto object-contain sm:h-20 md:h-24"
             priority
           />
           <span className="hidden text-xs font-semibold tracking-wide text-primary lg:block lg:text-sm xl:text-base">
-            Compromisso com a qualidade
+            {t("nav.tagline")}
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center space-x-4 md:flex lg:space-x-6 xl:space-x-10">
+        <div className="hidden items-center space-x-4 md:flex lg:space-x-6 xl:space-x-8">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -48,10 +51,12 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
+          <LanguageSwitcher />
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="flex items-center md:hidden">
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageSwitcher />
           <Button
             variant="outline"
             size="icon"

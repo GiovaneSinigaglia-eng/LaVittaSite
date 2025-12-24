@@ -1,0 +1,423 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Quem Somos",
+    "media": "Mídia",
+    "contact": "Contato",
+    "careers": "Trabalhe conosco",
+    "tagline": "Compromisso com a qualidade",
+    "logoAlt": "Logo La Vitta Cosmética"
+  },
+  "home": {
+    "hero": {
+      "badge": "🏆 Referência Nacional há 25+ anos",
+      "title": "Transforme sua marca com a",
+      "titleHighlight": "La Vitta",
+      "description": "Terceirização completa de esmaltes e produtos para unhas. Da concepção à entrega, oferecemos",
+      "quality": "qualidade excepcional",
+      "and": "e",
+      "innovation": "inovação constante",
+      "forSuccess": "para o sucesso da sua marca.",
+      "ctaQuote": "Solicite um Orçamento",
+      "ctaAbout": "Conheça Nossa História",
+      "unitsPerDay": "unidades/dia",
+      "formulas": "fórmulas",
+      "years": "anos",
+      "dedicated": "100% Dedicados",
+      "toOutsourcing": "à terceirização"
+    },
+    "benefits": {
+      "title": "Por que escolher a",
+      "titleHighlight": "La Vitta",
+      "subtitle": "Somos mais que um fornecedor, somos seu parceiro estratégico no mercado de beleza",
+      "experience": {
+        "title": "25+ Anos de Experiência",
+        "description": "Tradição e expertise no mercado de cosméticos para unhas"
+      },
+      "certifications": {
+        "title": "Certificações Completas",
+        "description": "Todas as autorizações CRQ, ANVISA, CETESB e mais"
+      },
+      "partnership": {
+        "title": "Parceria Estratégica",
+        "description": "Foco 100% no sucesso dos nossos clientes"
+      },
+      "innovation": {
+        "title": "Inovação Constante",
+        "description": "Acompanhamento das tendências globais de beleza"
+      }
+    },
+    "services": {
+      "title1": "Nossos",
+      "title2": "Serviços",
+      "button": "Terceirize com a La Vitta",
+      "subtitle": "Soluções completas e personalizadas para o sucesso da sua marca no mercado",
+      "advisory": {
+        "title": "Assessoria Completa",
+        "description": "Orientação tributária, exportação e regularização ANVISA"
+      },
+      "quality": {
+        "title": "Controle de Qualidade",
+        "description": "Processos rigorosos garantindo excelência em cada produto"
+      },
+      "research": {
+        "title": "Pesquisa e Desenvolvimento",
+        "description": "Inovação constante com as últimas tendências do mercado"
+      },
+      "manufacturing": {
+        "title": "Fabricação e Envase",
+        "description": "Infraestrutura moderna para produção em larga escala"
+      }
+    },
+    "advisory": {
+      "items": {
+        "tax": "Assessoria tributária",
+        "export": "Orientação para a exportação",
+        "launch": "Assessoria para lançamento de produtos",
+        "design": "Auxílio na identidade visual e design",
+        "anvisa": "Regularização da ANVISA",
+        "brand": "Assessoria no registro de marca",
+        "support": "Suporte na tomada de decisões"
+      }
+    },
+    "numbers": {
+      "title1": "A",
+      "title2": "La Vitta",
+      "title3": "em números",
+      "subtitle": "Números que comprovam nossa excelência e compromisso com o mercado",
+      "unitsPerShift": "unidades por turno por dia",
+      "capacityDesc": "Capacidade produtiva de alta performance",
+      "exclusiveFormulas": "fórmulas exclusivas",
+      "diversityDesc": "Diversidade e inovação em produtos",
+      "factoryArea": "m² de área fabril",
+      "infrastructureDesc": "Infraestrutura moderna e completa"
+    },
+    "clients": {
+      "title1": "Marcas que",
+      "title2": "confiam",
+      "title3": "em nós",
+      "subtitle": "Parceiros de sucesso que escolheram a La Vitta para impulsionar seus negócios",
+      "cta": "Quer fazer parte dessa lista de sucesso?",
+      "ctaButton": "Fale com nosso time"
+    },
+    "production": {
+      "title1": "Nossa",
+      "title2": "Produção",
+      "subtitle": "Tecnologia de ponta e processos modernos para garantir qualidade excepcional"
+    },
+    "cta": {
+      "badge": "Transforme sua marca hoje",
+      "title": "Pronto para levar sua marca ao próximo nível?",
+      "subtitle": "Entre em contato com nosso time de especialistas e descubra como a La Vitta pode transformar suas ideias em produtos de sucesso no mercado de beleza.",
+      "button": "Solicitar Orçamento",
+      "buttonAlt": "Nossa História"
+    }
+  },
+  "footer": {
+    "description": "Cuidando da sua beleza natural com produtos de qualidade e ingredientes selecionados. Sua satisfação é nossa prioridade.",
+    "quickLinks": "Links Rápidos",
+    "contactTitle": "Contato",
+    "address": "São Paulo, SP",
+    "country": "Brasil",
+    "whatsapp": "WhatsApp",
+    "rights": "La Vitta Cosmética. Todos os direitos reservados."
+  },
+  "about": {
+    "badge": "🏆 25+ anos de excelência",
+    "title": "Conheça a",
+    "titleHighlight": "La Vitta",
+    "titleSuffix": "Cosmética",
+    "subtitle": "Referência nacional em terceirização de esmaltes e produtos para unhas, unindo tradição, inovação e compromisso com a excelência.",
+    "history": {
+      "badge": "Nossa Jornada",
+      "title": "Uma História de",
+      "titleHighlight": "Sucesso",
+      "p1": "A La Vitta nasceu em julho de 1998 com a missão de ser parceira estratégica de marcas que buscam crescer no setor de cosméticos para unhas. Ao longo de mais de duas décadas, nos tornamos sinônimo de confiança, inovação e compromisso com a qualidade.",
+      "p2": "Contamos com uma estrutura moderna, equipe altamente especializada e tecnologia de ponta em nossos processos de fabricação. Nossa experiência, aliada ao acompanhamento constante das tendências do mercado de beleza, nos permite desenvolver produtos diferenciados.",
+      "years": "Anos",
+      "ctaButton": "Conheça Nossa História Completa",
+      "dialog": {
+        "title": "A História da",
+        "titleHighlight": "La Vitta",
+        "subtitle": "Mais de 25 anos de dedicação à excelência em cosméticos",
+        "firstSteps": {
+          "title": "Os Primeiros Passos (1998)",
+          "description": "Em julho de 1998, nasceu a La Vitta Cosmética com uma visão revolucionária: especializar-se exclusivamente na terceirização da fabricação de esmaltes para unhas. Desde o início, nossa missão foi clara - não apenas produzir, mas ser parceiros estratégicos de nossos clientes."
+        },
+        "growth": {
+          "title": "Crescimento e Inovação",
+          "p1": "Ao longo dos anos, investimos constantemente em pesquisa e desenvolvimento, acompanhando de perto as tendências globais de beleza. Nossa equipe técnica trabalha incansavelmente no aprimoramento de fórmulas, testando novos pigmentos e desenvolvendo cores que capturam o espírito de cada época.",
+          "p2": "Desenvolvemos expertise em diferentes tipos de acabamentos: desde os clássicos cremosos até as mais modernas formulações com glitter, perolados e tratamentos especializados."
+        },
+        "expansion": {
+          "title": "Expansão Nacional e Internacional",
+          "description": "Nossa reputação de qualidade e confiabilidade nos levou além das fronteiras nacionais. Hoje, atendemos clientes em diversos países, sempre mantendo os mesmos padrões rigorosos de qualidade que nos tornaram referência no mercado brasileiro."
+        },
+        "certifications": {
+          "title": "Compromisso com a Qualidade",
+          "description": "Possuímos todas as certificações e autorizações necessárias dos órgãos competentes:",
+          "items": [
+            "Conselho Regional de Química (CRQ)",
+            "Vigilância Sanitária",
+            "Ministério da Saúde",
+            "CETESB (Companhia Ambiental)",
+            "Polícia Federal e Estadual",
+            "Corpo de Bombeiros"
+          ]
+        },
+        "numbers": {
+          "title": "Nossos Números",
+          "years": "Anos de Experiência",
+          "unitsDay": "Unidades/Dia",
+          "formulas": "Fórmulas Desenvolvidas"
+        },
+        "philosophy": {
+          "title": "Nossa Filosofia",
+          "p1": "Optamos conscientemente por não ter marca própria, mantendo nosso foco total na terceirização. Esta decisão estratégica nos permite dedicar 100% de nossa energia e recursos ao sucesso de nossos parceiros.",
+          "p2": "Cada projeto é único, desenvolvido de forma personalizada para atender às necessidades específicas e metas de mercado de cada cliente. Não fabricamos apenas esmaltes - construímos sonhos e ajudamos marcas a se destacarem no competitivo universo da beleza."
+        }
+      }
+    },
+    "values": {
+      "care": {
+        "title": "Cuidado",
+        "description": "Cada produto é desenvolvido com carinho e atenção aos detalhes para cuidar da beleza."
+      },
+      "quality": {
+        "title": "Qualidade",
+        "description": "Processos rigorosos de fabricação garantem a excelência de cada fórmula."
+      },
+      "innovation": {
+        "title": "Inovação",
+        "description": "Buscamos constantemente as mais recentes tecnologias e tendências."
+      },
+      "trust": {
+        "title": "Confiança",
+        "description": "Relacionamentos duradouros baseados em transparência e satisfação."
+      }
+    },
+    "valuesSection": {
+      "title": "Nossos",
+      "titleHighlight": "Valores",
+      "subtitle": "Princípios que guiam cada decisão e cada produto que desenvolvemos"
+    },
+    "certificationsSection": {
+      "badge": "Qualidade Certificada",
+      "title": "Compromisso com a",
+      "titleHighlight": "Excelência",
+      "subtitle": "Todas as autorizações e certificações necessárias para garantir segurança e qualidade"
+    },
+    "missionVisionValues": {
+      "title": "Missão, Visão e",
+      "titleHighlight": "Valores",
+      "mission": {
+        "title": "Missão",
+        "description": "Proporcionar produtos cosméticos de alta qualidade que realcem a beleza natural de cada pessoa, promovendo autoestima e bem-estar."
+      },
+      "vision": {
+        "title": "Visão",
+        "description": "Ser reconhecida como a marca de cosméticos mais confiável e inovadora do Brasil, presente na vida de milhões de pessoas."
+      },
+      "values": {
+        "title": "Valores",
+        "description": "Qualidade, inovação, sustentabilidade, respeito ao cliente e compromisso com a beleza natural e saudável."
+      }
+    },
+    "productsSection": {
+      "title": "Nossos",
+      "titleHighlight": "Produtos",
+      "subtitle": "Diversidade e qualidade em cada fórmula desenvolvida"
+    },
+    "products": {
+      "title": "Linha Completa de",
+      "titleHighlight": "Produtos",
+      "subtitle": "Diversidade e qualidade para atender todas as necessidades",
+      "creamy": {
+        "title": "Esmaltes Cremosos",
+        "description": "Fórmulas cremosas com cobertura uniforme e acabamento impecável"
+      },
+      "glitter": {
+        "title": "Esmaltes com Glitter",
+        "description": "Brilho intenso e partículas especiais para looks únicos"
+      },
+      "pearlized": {
+        "title": "Esmaltes Perolados",
+        "description": "Acabamento nacarado sofisticado com reflexos luminosos"
+      },
+      "treatment": {
+        "title": "Esmaltes de Tratamento",
+        "description": "Cuidado especializado para fortalecimento e proteção das unhas"
+      }
+    },
+    "finalCta": {
+      "title": "Gostou de conhecer nossa história?",
+      "subtitle": "Entre em contato conosco e descubra como podemos ajudar sua marca a crescer!",
+      "whatsappMessage": "Olá! Acabei de conhecer a história da La Vitta Cosmética e gostaria de saber mais.",
+      "whatsappButton": "Falar pelo WhatsApp",
+      "emailButton": "Enviar E-mail"
+    },
+    "certifications": {
+      "title": "Certificações e",
+      "titleHighlight": "Compromisso",
+      "subtitle": "Todas as autorizações necessárias para garantir segurança e qualidade",
+      "crq": "Conselho Regional de Química",
+      "anvisa": "Agência Nacional de Vigilância Sanitária",
+      "cetesb": "Companhia Ambiental do Estado",
+      "health1": "Ministério da Saúde",
+      "health2": "Autorização Federal"
+    }
+  },
+  "contact": {
+    "badge": "📧 Estamos à disposição",
+    "title": "Entre em",
+    "titleHighlight": "Contato",
+    "subtitle": "Estamos aqui para ajudar você! Entre em contato conosco através dos canais abaixo ou envie uma mensagem diretamente pelo formulário.",
+    "modal": {
+      "title": "Mensagem Enviada!",
+      "message": "Obrigado pelo seu contato! Recebemos sua mensagem e nossa equipe entrará em contato com você o mais breve possível, geralmente em até 24 horas.",
+      "button": "Fechar"
+    },
+    "form": {
+      "title": "Envie sua Mensagem",
+      "subtitle": "Preencha o formulário abaixo e nossa equipe entrará em contato em até 24 horas.",
+      "name": "Nome Completo",
+      "namePlaceholder": "Seu nome completo",
+      "email": "E-mail",
+      "emailPlaceholder": "seu@email.com",
+      "phone": "Telefone",
+      "phonePlaceholder": "(00) 00000-0000",
+      "cpfCnpj": "CPF/CNPJ",
+      "cpfCnpjPlaceholder": "000.000.000-00 ou 00.000.000/0000-00",
+      "message": "Mensagem",
+      "messagePlaceholder": "Como podemos ajudar você?",
+      "submit": "Enviar Mensagem",
+      "submitting": "Enviando..."
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "description": "Você também pode entrar em contato através dos nossos canais diretos:",
+      "phone": "Telefone",
+      "email": "E-mail",
+      "address": "Endereço",
+      "hours": {
+        "title": "Horário de Atendimento",
+        "weekdays": "Segunda a Quinta:",
+        "weekdaysTime": "8h às 17h",
+        "friday": "Sexta-feira:",
+        "fridayTime": "8h às 17h",
+        "weekend": "Final de semana:",
+        "weekendTime": "Fechado"
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Fale conosco diretamente pelo WhatsApp para atendimento rápido e personalizado!"
+      }
+    },
+    "location": {
+      "title": "Nossa",
+      "titleHighlight": "Localização",
+      "subtitle": "Venha nos visitar em nossa loja física em São Paulo"
+    },
+    "whatsappCta": {
+      "title": "Precisa de ajuda imediata?",
+      "subtitle": "Fale conosco pelo WhatsApp e receba atendimento personalizado em tempo real!",
+      "message": "Olá! Preciso de ajuda imediata com os produtos da La Vitta Cosmética. Podem me atender?"
+    },
+    "whatsappMessages": {
+      "contactCard": "Olá! Vim através do site da La Vitta Cosmética e gostaria de falar com vocês."
+    }
+  },
+  "careers": {
+    "hero": {
+      "badge": "💼 Oportunidades de carreira",
+      "title": "Trabalhe",
+      "highlight": "Conosco",
+      "subtitle": "Faça parte da equipe La Vitta Cosmética! Preencha o formulário abaixo e envie seu currículo."
+    },
+    "modal": {
+      "title": "Candidatura Enviada!",
+      "message": "Obrigado por enviar seu currículo! Nossa equipe de RH analisará suas informações e entrará em contato se houver uma oportunidade adequada.",
+      "button": "Fechar"
+    },
+    "benefits": {
+      "title": "Por que trabalhar",
+      "highlight": "conosco?",
+      "subtitle": "Benefícios e diferenciais de fazer parte do time La Vitta",
+      "items": {
+        "opportunities": {
+          "title": "Crescimento Profissional",
+          "description": "Oportunidades reais de desenvolvimento e crescimento na carreira."
+        },
+        "team": {
+          "title": "Equipe Colaborativa",
+          "description": "Faça parte de um time engajado e apaixonado pelo que faz."
+        },
+        "innovation": {
+          "title": "Ambiente Inovador",
+          "description": "Trabalhe em um ambiente que valoriza criatividade e inovação."
+        },
+        "care": {
+          "title": "Benefícios Competitivos",
+          "description": "Pacote completo de benefícios para você e sua família."
+        }
+      }
+    },
+    "form": {
+      "title": "Candidate-se Agora",
+      "description": "Preencha o formulário abaixo e envie seu currículo. Entraremos em contato caso surjam oportunidades.",
+      "fields": {
+        "name": "Nome Completo",
+        "cpf": "CPF",
+        "birthdate": "Data de Nascimento",
+        "address": "Endereço",
+        "email": "E-mail",
+        "phone": "Telefone",
+        "message": "Mensagem",
+        "resume": "Currículo (Link)"
+      },
+      "placeholders": {
+        "name": "Seu nome completo",
+        "cpf": "000.000.000-00",
+        "address": "Rua, número, bairro, cidade",
+        "email": "seu@email.com",
+        "phone": "(00) 00000-0000",
+        "message": "Conte-nos sobre sua experiência e por que quer trabalhar conosco",
+        "resume": "Cole o link do seu currículo (Google Drive, Dropbox, etc.)"
+      },
+      "instructions": "Cole o link do Google Drive, Dropbox ou outro serviço de armazenamento",
+      "submit": "Enviar Candidatura",
+      "submitting": "Enviando..."
+    }
+  },
+  "media": {
+    "title": "A",
+    "titleHighlight": "La Vitta",
+    "titleSuffix": "em Destaque",
+    "subtitle": "Confira vídeos, matérias e reportagens sobre nossa trajetória e inovação no setor cosmético.",
+    "videos": {
+      "title": "Nossos",
+      "titleHighlight": "Vídeos",
+      "subtitle": "Conheça mais sobre a La Vitta através dos nossos vídeos institucionais",
+      "watch": "Assistir no YouTube"
+    },
+    "video1": {
+      "title": "Inovação na Fabricação de Esmaltes",
+      "description": "Conheça nossos processos de fabricação e como transformamos ideias em produtos de alta qualidade."
+    },
+    "add": {
+      "title": "Quer fazer parte da nossa história?",
+      "subtitle": "Descubra como a La Vitta pode ajudar sua marca a crescer no mercado de cosméticos.",
+      "button": "Entre em contato",
+      "buttonAlt": "Conheça a La Vitta"
+    }
+  },
+  "language": {
+    "select": "Selecione o idioma",
+    "portuguese": "Português",
+    "english": "Inglês",
+    "spanish": "Espanhol"
+  },
+  "common": {
+    "close": "Fechar"
+  }
+}

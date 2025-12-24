@@ -1,12 +1,10 @@
 import "./globals.css"
 
-import { Analytics } from "@vercel/analytics/next"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import type React from "react"
 
-import Footer from "@/components/footer"
-import Navbar from "@/components/navbar"
+import { ClientLayout } from "@/components/client-layout"
 // import WhatsAppFloating from "@/components/whatsapp-floating"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -21,12 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <Navbar />
-        <main className="min-h-screen">
-          <Analytics />
-          {children}
-        </main>
-        <Footer />
+        <ClientLayout>{children}</ClientLayout>
 
         {/**/}
         {/* vamos deixar sem o WhatsApp por enquanto */}

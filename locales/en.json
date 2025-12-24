@@ -1,0 +1,423 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "media": "Media",
+    "contact": "Contact",
+    "careers": "Work With Us",
+    "tagline": "Commitment to quality",
+    "logoAlt": "La Vitta Cosmetics Logo"
+  },
+  "home": {
+    "hero": {
+      "badge": "🏆 National Reference for 25+ years",
+      "title": "Transform your brand with",
+      "titleHighlight": "La Vitta",
+      "description": "Complete outsourcing of nail polishes and nail products. From conception to delivery, we offer",
+      "quality": "exceptional quality",
+      "and": "and",
+      "innovation": "constant innovation",
+      "forSuccess": "for your brand's success.",
+      "ctaQuote": "Request a Quote",
+      "ctaAbout": "Learn Our Story",
+      "unitsPerDay": "units/day",
+      "formulas": "formulas",
+      "years": "years",
+      "dedicated": "100% Dedicated",
+      "toOutsourcing": "to outsourcing"
+    },
+    "benefits": {
+      "title": "Why choose",
+      "titleHighlight": "La Vitta",
+      "subtitle": "We are more than a supplier, we are your strategic partner in the beauty market",
+      "experience": {
+        "title": "25+ Years of Experience",
+        "description": "Tradition and expertise in the nail cosmetics market"
+      },
+      "certifications": {
+        "title": "Complete Certifications",
+        "description": "All CRQ, ANVISA, CETESB authorizations and more"
+      },
+      "partnership": {
+        "title": "Strategic Partnership",
+        "description": "100% focus on our clients' success"
+      },
+      "innovation": {
+        "title": "Constant Innovation",
+        "description": "Following global beauty trends"
+      }
+    },
+    "services": {
+      "title1": "Our",
+      "title2": "Services",
+      "button": "Outsource with La Vitta",
+      "subtitle": "Complete and personalized solutions for your brand's success in the market",
+      "advisory": {
+        "title": "Complete Advisory",
+        "description": "Tax guidance, export and ANVISA regularization"
+      },
+      "quality": {
+        "title": "Quality Control",
+        "description": "Rigorous processes ensuring excellence in every product"
+      },
+      "research": {
+        "title": "Research and Development",
+        "description": "Constant innovation with the latest market trends"
+      },
+      "manufacturing": {
+        "title": "Manufacturing and Packaging",
+        "description": "Modern infrastructure for large-scale production"
+      }
+    },
+    "advisory": {
+      "items": {
+        "tax": "Tax advisory",
+        "export": "Export guidance",
+        "launch": "Product launch advisory",
+        "design": "Visual identity and design assistance",
+        "anvisa": "ANVISA regularization",
+        "brand": "Brand registration advisory",
+        "support": "Decision-making support"
+      }
+    },
+    "numbers": {
+      "title1": "",
+      "title2": "La Vitta",
+      "title3": "in numbers",
+      "subtitle": "Numbers that prove our excellence and commitment to the market",
+      "unitsPerShift": "units produced per shift per day",
+      "capacityDesc": "High-performance production capacity",
+      "exclusiveFormulas": "exclusive formulas",
+      "diversityDesc": "Diversity and innovation in products",
+      "factoryArea": "m² of factory area",
+      "infrastructureDesc": "Modern and complete infrastructure"
+    },
+    "clients": {
+      "title1": "Brands that",
+      "title2": "trust",
+      "title3": "us",
+      "subtitle": "Successful partners who chose La Vitta to boost their business",
+      "cta": "Want to be part of this success list?",
+      "ctaButton": "Contact our team"
+    },
+    "production": {
+      "title1": "Our",
+      "title2": "Production",
+      "subtitle": "Cutting-edge technology and modern processes to ensure exceptional quality"
+    },
+    "cta": {
+      "badge": "Transform your brand today",
+      "title": "Ready to take your brand to the next level?",
+      "subtitle": "Contact our team of experts and discover how La Vitta can transform your ideas into successful products in the beauty market.",
+      "button": "Request Quote",
+      "buttonAlt": "Our Story"
+    }
+  },
+  "footer": {
+    "description": "Taking care of your natural beauty with quality products and selected ingredients. Your satisfaction is our priority.",
+    "quickLinks": "Quick Links",
+    "contactTitle": "Contact",
+    "address": "São Paulo, SP",
+    "country": "Brazil",
+    "whatsapp": "WhatsApp",
+    "rights": "La Vitta Cosmetics. All rights reserved."
+  },
+  "about": {
+    "badge": "🏆 25+ years of excellence",
+    "title": "Meet",
+    "titleHighlight": "La Vitta",
+    "titleSuffix": "Cosmetics",
+    "subtitle": "National reference in nail polish and nail product outsourcing, combining tradition, innovation and commitment to excellence.",
+    "history": {
+      "badge": "Our Journey",
+      "title": "A Story of",
+      "titleHighlight": "Success",
+      "p1": "La Vitta was born in July 1998 with the mission of being a strategic partner for brands seeking to grow in the nail cosmetics sector. Over more than two decades, we have become synonymous with trust, innovation and commitment to quality.",
+      "p2": "We have a modern structure, highly specialized team and state-of-the-art technology in our manufacturing processes. Our experience, combined with constant monitoring of beauty market trends, allows us to develop differentiated products.",
+      "years": "Years",
+      "ctaButton": "Learn Our Complete Story",
+      "dialog": {
+        "title": "The Story of",
+        "titleHighlight": "La Vitta",
+        "subtitle": "Over 25 years of dedication to excellence in cosmetics",
+        "firstSteps": {
+          "title": "The First Steps (1998)",
+          "description": "In July 1998, La Vitta Cosmetics was born with a revolutionary vision: to specialize exclusively in outsourcing nail polish manufacturing. From the beginning, our mission was clear - not just to produce, but to be strategic partners for our clients."
+        },
+        "growth": {
+          "title": "Growth and Innovation",
+          "p1": "Over the years, we have constantly invested in research and development, closely monitoring global beauty trends. Our technical team works tirelessly to improve formulas, testing new pigments and developing colors that capture the spirit of each era.",
+          "p2": "We have developed expertise in different types of finishes: from classic creams to the most modern formulations with glitter, pearlescent and specialized treatments."
+        },
+        "expansion": {
+          "title": "National and International Expansion",
+          "description": "Our reputation for quality and reliability has taken us beyond national borders. Today, we serve clients in several countries, always maintaining the same rigorous quality standards that have made us a reference in the Brazilian market."
+        },
+        "certifications": {
+          "title": "Commitment to Quality",
+          "description": "We have all the necessary certifications and authorizations from the competent bodies:",
+          "items": [
+            "Regional Council of Chemistry (CRQ)",
+            "Health Surveillance",
+            "Ministry of Health",
+            "CETESB (Environmental Company)",
+            "Federal and State Police",
+            "Fire Department"
+          ]
+        },
+        "numbers": {
+          "title": "Our Numbers",
+          "years": "Years of Experience",
+          "unitsDay": "Units/Day",
+          "formulas": "Developed Formulas"
+        },
+        "philosophy": {
+          "title": "Our Philosophy",
+          "p1": "We consciously chose not to have our own brand, keeping our total focus on outsourcing. This strategic decision allows us to dedicate 100% of our energy and resources to the success of our partners.",
+          "p2": "Each project is unique, developed in a personalized way to meet the specific needs and market goals of each client. We don't just manufacture nail polishes - we build dreams and help brands stand out in the competitive beauty universe."
+        }
+      }
+    },
+    "valuesSection": {
+      "title": "Our",
+      "titleHighlight": "Values",
+      "subtitle": "Principles that guide every decision and every product we develop"
+    },
+    "certificationsSection": {
+      "badge": "Certified Quality",
+      "title": "Commitment to",
+      "titleHighlight": "Excellence",
+      "subtitle": "All necessary authorizations and certifications to ensure safety and quality"
+    },
+    "missionVisionValues": {
+      "title": "Mission, Vision and",
+      "titleHighlight": "Values",
+      "mission": {
+        "title": "Mission",
+        "description": "To provide high-quality cosmetic products that enhance each person's natural beauty, promoting self-esteem and well-being."
+      },
+      "vision": {
+        "title": "Vision",
+        "description": "To be recognized as Brazil's most reliable and innovative cosmetics brand, present in the lives of millions of people."
+      },
+      "values": {
+        "title": "Values",
+        "description": "Quality, innovation, sustainability, respect for customers and commitment to natural and healthy beauty."
+      }
+    },
+    "productsSection": {
+      "title": "Our",
+      "titleHighlight": "Products",
+      "subtitle": "Diversity and quality in every formula developed"
+    },
+    "finalCta": {
+      "title": "Did you like learning about our story?",
+      "subtitle": "Contact us and discover how we can help your brand grow!",
+      "whatsappMessage": "Hello! I just learned about La Vitta Cosmética's story and would like to know more.",
+      "whatsappButton": "Chat on WhatsApp",
+      "emailButton": "Send Email"
+    },
+    "values": {
+      "care": {
+        "title": "Care",
+        "description": "Each product is developed with care and attention to detail to take care of beauty."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Rigorous manufacturing processes ensure the excellence of each formula."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly seek the latest technologies and trends."
+      },
+      "trust": {
+        "title": "Trust",
+        "description": "Lasting relationships based on transparency and satisfaction."
+      }
+    },
+    "products": {
+      "title": "Complete Line of",
+      "titleHighlight": "Products",
+      "subtitle": "Diversity and quality to meet all needs",
+      "creamy": {
+        "title": "Creamy Nail Polishes",
+        "description": "Creamy formulas with uniform coverage and impeccable finish"
+      },
+      "glitter": {
+        "title": "Glitter Nail Polishes",
+        "description": "Intense shine and special particles for unique looks"
+      },
+      "pearlized": {
+        "title": "Pearlized Nail Polishes",
+        "description": "Sophisticated pearlescent finish with luminous reflections"
+      },
+      "treatment": {
+        "title": "Treatment Nail Polishes",
+        "description": "Specialized care for strengthening and protecting nails"
+      }
+    },
+    "certifications": {
+      "title": "Certifications and",
+      "titleHighlight": "Commitment",
+      "subtitle": "All necessary authorizations to ensure safety and quality",
+      "crq": "Regional Council of Chemistry",
+      "anvisa": "National Health Surveillance Agency",
+      "cetesb": "State Environmental Company",
+      "health1": "Ministry of Health",
+      "health2": "Federal Authorization"
+    }
+  },
+  "contact": {
+    "badge": "📧 We're here for you",
+    "title": "Get in",
+    "titleHighlight": "Touch",
+    "subtitle": "We're here to help you! Contact us through the channels below or send a message directly through the form.",
+    "modal": {
+      "title": "Message Sent!",
+      "message": "Thank you for contacting us! We have received your message and our team will get back to you as soon as possible, usually within 24 hours.",
+      "button": "Close"
+    },
+    "form": {
+      "title": "Send Your Message",
+      "subtitle": "Fill out the form below and our team will contact you within 24 hours.",
+      "name": "Full Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "(00) 00000-0000",
+      "cpfCnpj": "Tax ID",
+      "cpfCnpjPlaceholder": "000.000.000-00 or 00.000.000/0000-00",
+      "message": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "submit": "Send Message",
+      "submitting": "Sending..."
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "You can also contact us through our direct channels:",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Monday to Thursday:",
+        "weekdaysTime": "8am to 5pm",
+        "friday": "Friday:",
+        "fridayTime": "8am to 5pm",
+        "weekend": "Weekend:",
+        "weekendTime": "Closed"
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Talk to us directly on WhatsApp for quick and personalized service!"
+      }
+    },
+    "location": {
+      "title": "Our",
+      "titleHighlight": "Location",
+      "subtitle": "Come visit us at our physical store in São Paulo"
+    },
+    "whatsappCta": {
+      "title": "Need immediate help?",
+      "subtitle": "Talk to us on WhatsApp and receive personalized service in real time!",
+      "message": "Hello! I need immediate help with La Vitta Cosmetics products. Can you assist me?"
+    },
+    "whatsappMessages": {
+      "contactCard": "Hello! I came through the La Vitta Cosmetics website and would like to talk to you."
+    }
+  },
+  "careers": {
+    "hero": {
+      "badge": "💼 Career opportunities",
+      "title": "Work",
+      "highlight": "With Us",
+      "subtitle": "Join the La Vitta Cosmetics team! Fill out the form below and submit your resume."
+    },
+    "modal": {
+      "title": "Application Submitted!",
+      "message": "Thank you for submitting your resume! Our HR team will review your information and contact you if there is a suitable opportunity.",
+      "button": "Close"
+    },
+    "benefits": {
+      "title": "Why work",
+      "highlight": "with us?",
+      "subtitle": "Benefits and advantages of being part of the La Vitta team",
+      "items": {
+        "opportunities": {
+          "title": "Professional Growth",
+          "description": "Real opportunities for development and career growth."
+        },
+        "team": {
+          "title": "Collaborative Team",
+          "description": "Be part of an engaged team passionate about what they do."
+        },
+        "innovation": {
+          "title": "Innovative Environment",
+          "description": "Work in an environment that values creativity and innovation."
+        },
+        "care": {
+          "title": "Competitive Benefits",
+          "description": "Complete benefits package for you and your family."
+        }
+      }
+    },
+    "form": {
+      "title": "Apply Now",
+      "description": "Fill out the form below and submit your resume. We will contact you if opportunities arise.",
+      "fields": {
+        "name": "Full Name",
+        "cpf": "Tax ID",
+        "birthdate": "Date of Birth",
+        "address": "Address",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "resume": "Resume (Link)"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "cpf": "000.000.000-00",
+        "address": "Street, number, neighborhood, city",
+        "email": "your@email.com",
+        "phone": "(00) 00000-0000",
+        "message": "Tell us about your experience and why you want to work with us",
+        "resume": "Paste your resume link (Google Drive, Dropbox, etc.)"
+      },
+      "instructions": "Paste the link from Google Drive, Dropbox or another storage service",
+      "submit": "Submit Application",
+      "submitting": "Sending..."
+    }
+  },
+  "media": {
+    "title": "The",
+    "titleHighlight": "La Vitta",
+    "titleSuffix": "in the Spotlight",
+    "subtitle": "Check out videos, articles and reports about our journey and innovation in the cosmetics sector.",
+    "videos": {
+      "title": "Our",
+      "titleHighlight": "Videos",
+      "subtitle": "Learn more about La Vitta through our institutional videos",
+      "watch": "Watch on YouTube"
+    },
+    "video1": {
+      "title": "Innovation in Nail Polish Manufacturing",
+      "description": "Learn about our manufacturing processes and how we transform ideas into high-quality products."
+    },
+    "add": {
+      "title": "Want to be part of our story?",
+      "subtitle": "Discover how La Vitta can help your brand grow in the cosmetics market.",
+      "button": "Get in touch",
+      "buttonAlt": "Meet La Vitta"
+    }
+  },
+  "language": {
+    "select": "Select language",
+    "portuguese": "Portuguese",
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "common": {
+    "close": "Close"
+  }
+}
