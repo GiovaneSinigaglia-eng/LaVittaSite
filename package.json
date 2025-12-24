@@ -6,8 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "prelint": "eslint . --fix --quiet",
-    "lint": "next lint"
+    "lint": "eslint . --fix --quiet"
   },
   "dependencies": {
     "@emailjs/nodejs": "^5.0.2",

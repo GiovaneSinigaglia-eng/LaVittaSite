@@ -10,8 +10,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import WhatsAppButton from "@/components/whatsapp-button"
+import { useLanguage } from "@/hooks/use-language"
 
 export default function Contato() {
+  const { t } = useLanguage()
+
   const [formData, setFormData] = useState({
     nome: "",
     email: "",
@@ -72,13 +75,10 @@ export default function Contato() {
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
                 <CheckCircle className="h-8 w-8 text-green-600" />
               </div>
-              <h3 className="mb-4 text-2xl font-bold text-stone-900">Mensagem Enviada!</h3>
-              <p className="mb-6 text-stone-600">
-                Obrigado pelo seu contato! Recebemos sua mensagem e nossa equipe entrará em contato
-                com você o mais breve possível, geralmente em até 24 horas.
-              </p>
+              <h3 className="mb-4 text-2xl font-bold text-stone-900">{t("contact.modal.title")}</h3>
+              <p className="mb-6 text-stone-600">{t("contact.modal.message")}</p>
               <Button onClick={closeSuccessModal} className="w-full bg-red-600 hover:bg-red-700">
-                Fechar
+                {t("contact.modal.button")}
               </Button>
             </div>
             <button
@@ -106,14 +106,14 @@ export default function Contato() {
             className="text-center"
           >
             <div className="mb-6 inline-block rounded-full bg-primary/10 px-4 py-2">
-              <span className="text-sm font-semibold text-primary">📧 Estamos à disposição</span>
+              <span className="text-sm font-semibold text-primary">{t("contact.badge")}</span>
             </div>
             <h1 className="mb-4 text-3xl font-bold text-stone-900 sm:mb-6 sm:text-4xl lg:text-5xl">
-              Entre em <span className="giga-text-gradient">Contato</span>
+              {t("contact.title")}{" "}
+              <span className="giga-text-gradient">{t("contact.titleHighlight")}</span>
             </h1>
             <p className="mx-auto max-w-3xl text-base text-stone-600 sm:text-lg lg:text-xl">
-              Estamos aqui para ajudar você! Entre em contato conosco através dos canais abaixo ou
-              envie uma mensagem diretamente pelo formulário.
+              {t("contact.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -136,10 +136,10 @@ export default function Contato() {
             >
               <Card className="border-2 shadow-xl transition-all duration-300 hover:shadow-2xl">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-stone-900">Envie sua Mensagem</CardTitle>
-                  <p className="text-stone-600">
-                    Preencha o formulário abaixo e nossa equipe entrará em contato em até 24 horas.
-                  </p>
+                  <CardTitle className="text-2xl text-stone-900">
+                    {t("contact.form.title")}
+                  </CardTitle>
+                  <p className="text-stone-600">{t("contact.form.subtitle")}</p>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -148,7 +148,7 @@ export default function Contato() {
                         htmlFor="nome"
                         className="mb-2 block text-sm font-medium text-stone-700"
                       >
-                        Nome Completo *
+                        {t("contact.form.name")} *
                       </label>
                       <Input
                         id="nome"
@@ -159,7 +159,7 @@ export default function Contato() {
                         onChange={handleChange}
                         disabled={isSubmitting}
                         className="w-full rounded-lg border border-stone-300 bg-white px-4 py-3 text-stone-900 placeholder-stone-500 transition-all duration-200 focus:border-transparent focus:ring-2 focus:ring-red-500 disabled:opacity-50"
-                        placeholder="Seu nome completo"
+                        placeholder={t("contact.form.namePlaceholder")}
                       />
                     </div>
 
@@ -168,7 +168,7 @@ export default function Contato() {
                         htmlFor="email"
                         className="mb-2 block text-sm font-medium text-stone-700"
                       >
-                        E-mail *
+                        {t("contact.form.email")} *
                       </label>
                       <Input
                         id="email"
@@ -179,7 +179,7 @@ export default function Contato() {
                         onChange={handleChange}
                         disabled={isSubmitting}
                         className="w-full rounded-lg border border-stone-300 bg-white px-4 py-3 text-stone-900 placeholder-stone-500 transition-all duration-200 focus:border-transparent focus:ring-2 focus:ring-red-500 disabled:opacity-50"
-                        placeholder="seu@email.com"
+                        placeholder={t("contact.form.emailPlaceholder")}
                       />
                     </div>
 
@@ -188,7 +188,7 @@ export default function Contato() {
                         htmlFor="cpfcnpj"
                         className="mb-2 block text-sm font-medium text-stone-700"
                       >
-                        CPF/CNPJ *
+                        {t("contact.form.cpfCnpj")} *
                       </label>
                       <Input
                         id="cpfcnpj"
@@ -199,7 +199,7 @@ export default function Contato() {
                         onChange={handleChange}
                         disabled={isSubmitting}
                         className="w-full rounded-lg border border-stone-300 bg-white px-4 py-3 text-stone-900 placeholder-stone-500 transition-all duration-200 focus:border-transparent focus:ring-2 focus:ring-red-500 disabled:opacity-50"
-                        placeholder="Digite seu CPF ou CNPJ"
+                        placeholder={t("contact.form.cpfCnpjPlaceholder")}
                       />
                     </div>
 
@@ -208,7 +208,7 @@ export default function Contato() {
                         htmlFor="telefone"
                         className="mb-2 block text-sm font-medium text-stone-700"
                       >
-                        Telefone/WhatsApp
+                        {t("contact.form.phone")}
                       </label>
                       <Input
                         id="telefone"
@@ -218,7 +218,7 @@ export default function Contato() {
                         onChange={handleChange}
                         disabled={isSubmitting}
                         className="w-full rounded-lg border border-stone-300 bg-white px-4 py-3 text-stone-900 placeholder-stone-500 transition-all duration-200 focus:border-transparent focus:ring-2 focus:ring-red-500 disabled:opacity-50"
-                        placeholder="(11) 99999-9999"
+                        placeholder={t("contact.form.phonePlaceholder")}
                       />
                     </div>
 
@@ -227,7 +227,7 @@ export default function Contato() {
                         htmlFor="mensagem"
                         className="mb-2 block text-sm font-medium text-stone-700"
                       >
-                        Mensagem *
+                        {t("contact.form.message")} *
                       </label>
                       <Textarea
                         id="mensagem"
@@ -237,7 +237,7 @@ export default function Contato() {
                         onChange={handleChange}
                         disabled={isSubmitting}
                         className="min-h-[120px] w-full rounded-lg border border-stone-300 bg-white px-4 py-3 text-stone-900 placeholder-stone-500 transition-all duration-200 focus:border-transparent focus:ring-2 focus:ring-red-500 disabled:opacity-50"
-                        placeholder="Como podemos ajudar você?"
+                        placeholder={t("contact.form.messagePlaceholder")}
                       />
                     </div>
 
@@ -246,7 +246,7 @@ export default function Contato() {
                       disabled={isSubmitting}
                       className="w-full bg-red-600 hover:bg-red-700 disabled:opacity-50"
                     >
-                      {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
+                      {isSubmitting ? t("contact.form.submitting") : t("contact.form.submit")}
                     </Button>
                   </form>
                 </CardContent>
@@ -267,7 +267,9 @@ export default function Contato() {
                       <MapPin className="h-6 w-6 text-red-600" />
                     </div>
                     <div>
-                      <h3 className="mb-2 text-lg font-semibold text-stone-900">Endereço</h3>
+                      <h3 className="mb-2 text-lg font-semibold text-stone-900">
+                        {t("contact.info.address")}
+                      </h3>
                       <p className="text-stone-600">
                         Rua Javari, 246
                         <br />
@@ -287,7 +289,9 @@ export default function Contato() {
                       <Phone className="h-6 w-6 text-rose-600" />
                     </div>
                     <div>
-                      <h3 className="mb-2 text-lg font-semibold text-stone-900">Telefone</h3>
+                      <h3 className="mb-2 text-lg font-semibold text-stone-900">
+                        {t("contact.info.phone")}
+                      </h3>
                       <p className="text-stone-600">
                         <span>(11) 2796-3162</span>
                         <br />
@@ -305,10 +309,10 @@ export default function Contato() {
                       <Mail className="h-4 w-4 text-blue-600" />
                     </div>
                     <div>
-                      <h3 className="mb-2 text-lg font-semibold text-stone-900">E-mail</h3>
-                      <p className="text-stone-600">
-                        <strong>Geral:</strong> contato@lavittacosmetica.com.br
-                      </p>
+                      <h3 className="mb-2 text-lg font-semibold text-stone-900">
+                        {t("contact.info.email")}
+                      </h3>
+                      <p className="text-stone-600">contato@lavittacosmetica.com.br</p>
                     </div>
                   </div>
                 </CardContent>
@@ -322,14 +326,17 @@ export default function Contato() {
                     </div>
                     <div>
                       <h3 className="mb-2 text-lg font-semibold text-stone-900">
-                        Horário de Atendimento
+                        {t("contact.info.hours.title")}
                       </h3>
                       <p className="text-stone-600">
-                        <strong>Segunda a Quinta:</strong> 7h às 17h
+                        <strong>{t("contact.info.hours.weekdays")}</strong>{" "}
+                        {t("contact.info.hours.weekdaysTime")}
                         <br />
-                        <strong>Sexta:</strong> 7h às 16h
+                        <strong>{t("contact.info.hours.friday")}</strong>{" "}
+                        {t("contact.info.hours.fridayTime")}
                         <br />
-                        <strong>Sábado e Domingo:</strong> Fechado
+                        <strong>{t("contact.info.hours.weekend")}</strong>{" "}
+                        {t("contact.info.hours.weekendTime")}
                       </p>
                     </div>
                   </div>
@@ -343,16 +350,19 @@ export default function Contato() {
                       <MessageCircle className="h-6 w-6 text-green-600" />
                     </div>
                     <div>
-                      <h3 className="mb-2 text-lg font-semibold text-stone-900">WhatsApp</h3>
+                      <h3 className="mb-2 text-lg font-semibold text-stone-900">
+                        {t("contact.info.whatsapp.title")}
+                      </h3>
                       <p className="mb-4 text-stone-600">
-                        Atendimento rápido e personalizado
+                        {t("contact.info.whatsapp.description")}
                         <br />
-                        <strong>Online:</strong> Segunda a Sexta, 8h às 18h
+                        <strong>Online:</strong> {t("contact.info.hours.weekdays")}{" "}
+                        {t("contact.info.hours.weekdaysTime")}
                       </p>
                       <WhatsAppButton
                         variant="inline"
                         size="sm"
-                        message="Olá! Vim através do site da La Vitta Cosmética e gostaria de falar com vocês."
+                        message={t("contact.whatsappMessages.contactCard")}
                       />
                     </div>
                   </div>
@@ -374,10 +384,11 @@ export default function Contato() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              Nossa <span className="text-primary">Localização</span>
+              {t("contact.location.title")}{" "}
+              <span className="text-primary">{t("contact.location.titleHighlight")}</span>
             </h2>
             <p className="text-base text-stone-600 sm:text-lg lg:text-xl">
-              Venha nos visitar em nossa loja física em São Paulo
+              {t("contact.location.subtitle")}
             </p>
           </div>
 
@@ -407,15 +418,15 @@ export default function Contato() {
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <MessageCircle className="mx-auto mb-6 h-16 w-16 text-white" />
           <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            Precisa de ajuda imediata?
+            {t("contact.whatsappCta.title")}
           </h2>
           <p className="mb-8 text-lg text-red-100 sm:text-xl">
-            Fale conosco pelo WhatsApp e receba atendimento personalizado em tempo real!
+            {t("contact.whatsappCta.subtitle")}
           </p>
           <WhatsAppButton
             variant="inline"
             size="lg"
-            message="Olá! Preciso de ajuda imediata com os produtos da La Vitta Cosmética. Podem me atender?"
+            message={t("contact.whatsappCta.message")}
             className="bg-white text-green-600 hover:bg-stone-50"
           />
         </div>

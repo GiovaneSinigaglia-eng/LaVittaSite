@@ -6,14 +6,16 @@ import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { useLanguage } from "@/hooks/use-language"
 
 export default function Midia() {
+  const { t } = useLanguage()
+
   const videos = [
     {
       id: "EKLON64xLIg?si=J6Z4nXPlXtoUgBLS",
-      title: "Inovação na Fabricação de Esmaltes",
-      description:
-        "Conheça nossos processos de fabricação e como transformamos ideias em produtos de alta qualidade.",
+      title: t("media.video1.title"),
+      description: t("media.video1.description"),
     },
   ]
 
@@ -86,11 +88,12 @@ export default function Midia() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 text-center">
             <h1 className="mb-4 text-3xl font-bold text-stone-900 sm:mb-6 sm:text-4xl lg:text-5xl">
-              A <span className="font-extrabold text-primary">La Vitta</span> em Destaque
+              {t("media.title")}{" "}
+              <span className="font-extrabold text-primary">{t("media.titleHighlight")}</span>{" "}
+              {t("media.titleSuffix")}
             </h1>
             <p className="mx-auto max-w-3xl text-base text-stone-600 sm:text-lg lg:text-xl">
-              Confira vídeos, matérias e reportagens sobre nossa trajetória e inovação no setor
-              cosmético.
+              {t("media.subtitle")}
             </p>
           </div>
         </div>
@@ -106,7 +109,9 @@ export default function Midia() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex items-center justify-center gap-3 sm:mb-12">
             <PlayCircle className="h-8 w-8 text-primary sm:h-10 sm:w-10" />
-            <h2 className="text-2xl font-bold text-stone-900 sm:text-3xl lg:text-4xl">Vídeos</h2>
+            <h2 className="text-2xl font-bold text-stone-900 sm:text-3xl lg:text-4xl">
+              {t("media.videos.titleHighlight")}
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-1">
@@ -211,12 +216,9 @@ export default function Midia() {
       >
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-2xl font-bold text-primary-foreground sm:mb-6 sm:text-3xl lg:text-4xl">
-            Quer fazer parte da nossa história?
+            {t("media.add.title")}
           </h2>
-          <p className="mb-8 text-lg text-primary-foreground/90">
-            Descubra como a <span className="font-extrabold">La Vitta</span> pode ajudar sua marca a
-            crescer no mercado de cosméticos.
-          </p>
+          <p className="mb-8 text-lg text-primary-foreground/90">{t("media.add.subtitle")}</p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <Button
               asChild
@@ -224,7 +226,7 @@ export default function Midia() {
               variant="inverted"
               className="h-auto min-h-12 text-lg font-bold"
             >
-              <Link href="/contato">Entre em contato</Link>
+              <Link href="/contato">{t("media.add.button")}</Link>
             </Button>
             <Button
               asChild
@@ -232,7 +234,7 @@ export default function Midia() {
               variant="outline"
               className="h-auto min-h-12 border-2 border-white bg-transparent text-lg font-bold text-white hover:bg-white hover:text-primary"
             >
-              <Link href="/quem-somos">Conheça a La Vitta</Link>
+              <Link href="/quem-somos">{t("media.add.buttonAlt")}</Link>
             </Button>
           </div>
         </div>

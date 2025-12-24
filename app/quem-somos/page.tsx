@@ -15,65 +15,70 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import WhatsAppButton from "@/components/whatsapp-button"
+import { useLanguage } from "@/hooks/use-language"
 import ImageLavitta from "@/public/lavitta.jpg"
 
 export default function QuemSomos() {
+  const { t } = useLanguage()
+
   const values = [
     {
       icon: Heart,
-      title: "Cuidado",
-      description:
-        "Cada produto é desenvolvido com carinho e atenção aos detalhes para cuidar da beleza.",
+      title: t("about.values.care.title"),
+      description: t("about.values.care.description"),
       color: "rose",
     },
     {
       icon: Target,
-      title: "Qualidade",
-      description: "Processos rigorosos de fabricação garantem a excelência de cada fórmula.",
+      title: t("about.values.quality.title"),
+      description: t("about.values.quality.description"),
       color: "red",
     },
     {
       icon: Lightbulb,
-      title: "Inovação",
-      description: "Buscamos constantemente as mais recentes tecnologias e tendências.",
+      title: t("about.values.innovation.title"),
+      description: t("about.values.innovation.description"),
       color: "amber",
     },
     {
       icon: Users,
-      title: "Confiança",
-      description: "Relacionamentos duradouros baseados em transparência e satisfação.",
+      title: t("about.values.trust.title"),
+      description: t("about.values.trust.description"),
       color: "blue",
     },
   ]
 
   const produtos = [
     {
-      title: "Esmaltes Cremosos",
-      description: "Fórmulas cremosas com cobertura uniforme e acabamento impecável",
+      title: t("about.products.creamy.title"),
+      description: t("about.products.creamy.description"),
       icon: "💅",
     },
     {
-      title: "Esmaltes com Glitter",
-      description: "Brilho intenso e partículas especiais para looks únicos",
+      title: t("about.products.glitter.title"),
+      description: t("about.products.glitter.description"),
       icon: "✨",
     },
     {
-      title: "Esmaltes Perolados",
-      description: "Acabamento nacarado sofisticado com reflexos luminosos",
+      title: t("about.products.pearlized.title"),
+      description: t("about.products.pearlized.description"),
       icon: "🌟",
     },
     {
-      title: "Esmaltes de Tratamento",
-      description: "Cuidado especializado para fortalecimento e proteção das unhas",
+      title: t("about.products.treatment.title"),
+      description: t("about.products.treatment.description"),
       icon: "🌿",
     },
   ]
 
   const certifications = [
-    { name: "CRQ", description: "Conselho Regional de Química" },
-    { name: "ANVISA", description: "Agência Nacional de Vigilância Sanitária" },
-    { name: "CETESB", description: "Companhia Ambiental do Estado" },
-    { name: "Ministério da Saúde", description: "Autorização Federal" },
+    { name: "CRQ", description: t("about.certifications.crq") },
+    { name: "ANVISA", description: t("about.certifications.anvisa") },
+    { name: "CETESB", description: t("about.certifications.cetesb") },
+    {
+      name: t("about.certifications.health1"),
+      description: t("about.certifications.health2"),
+    },
   ]
 
   return (
@@ -93,16 +98,17 @@ export default function QuemSomos() {
             className="text-center"
           >
             <div className="mb-6 inline-block rounded-full bg-primary/10 px-4 py-2">
-              <span className="text-sm font-semibold text-primary">🏆 25+ anos de excelência</span>
+              <span className="text-sm font-semibold text-primary">{t("about.badge")}</span>
             </div>
 
             <h1 className="mb-6 text-4xl font-extrabold text-stone-900 sm:text-5xl lg:text-6xl">
-              Conheça a <span className="giga-text-gradient">La Vitta</span> Cosmética
+              {t("about.title")}{" "}
+              <span className="giga-text-gradient">{t("about.titleHighlight")}</span>{" "}
+              {t("about.titleSuffix")}
             </h1>
 
             <p className="mx-auto max-w-3xl text-base text-stone-600 sm:text-lg lg:text-xl">
-              Referência nacional em terceirização de esmaltes e produtos para unhas, unindo
-              tradição, inovação e compromisso com a excelência.
+              {t("about.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -123,36 +129,29 @@ export default function QuemSomos() {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <div className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-2">
-                <span className="text-sm font-semibold text-primary">Nossa Jornada</span>
+                <span className="text-sm font-semibold text-primary">
+                  {t("about.history.badge")}
+                </span>
               </div>
 
               <h2 className="mb-6 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-                Uma História de <span className="text-primary">Sucesso</span>
+                {t("about.history.title")}{" "}
+                <span className="text-primary">{t("about.history.titleHighlight")}</span>
               </h2>
 
               <div className="space-y-6 text-base leading-relaxed text-stone-600 sm:text-lg">
-                <p>
-                  A <span className="font-bold text-primary">La Vitta</span> nasceu em julho de 1998
-                  com a missão de ser parceira estratégica de marcas que buscam crescer no setor de
-                  cosméticos para unhas. Ao longo de mais de duas décadas, nos tornamos sinônimo de
-                  confiança, inovação e compromisso com a qualidade.
-                </p>
+                <p>{t("about.history.p1")}</p>
 
-                <p>
-                  Contamos com uma estrutura moderna, equipe altamente especializada e tecnologia de
-                  ponta em nossos processos de fabricação. Nossa experiência, aliada ao
-                  acompanhamento constante das tendências do mercado de beleza, nos permite
-                  desenvolver produtos diferenciados.
-                </p>
+                <p>{t("about.history.p2")}</p>
 
                 <div className="grid grid-cols-2 gap-4 rounded-xl bg-primary/5 p-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary">130k+</div>
-                    <div className="text-sm text-stone-600">unidades/dia</div>
+                    <div className="text-sm text-stone-600">{t("home.hero.unitsPerDay")}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary">10k+</div>
-                    <div className="text-sm text-stone-600">fórmulas</div>
+                    <div className="text-sm text-stone-600">{t("home.hero.formulas")}</div>
                   </div>
                 </div>
               </div>
@@ -163,16 +162,20 @@ export default function QuemSomos() {
                     size="lg"
                     className="mt-6 bg-primary text-white transition-all duration-300 hover:bg-primary/90 hover:shadow-lg"
                   >
-                    Conheça Nossa História Completa
+                    {t("about.history.ctaButton")}
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="max-h-[90vh] max-w-5xl overflow-hidden border-2 border-primary/20 bg-white p-0 shadow-2xl">
                   <DialogHeader className="flex-shrink-0 border-b border-stone-200 bg-gradient-to-r from-red-50 to-rose-50 px-6 py-5">
                     <DialogTitle className="text-center text-3xl font-bold text-stone-900 sm:text-4xl">
-                      A História da <span className="giga-text-gradient">La Vitta</span> Cosmética
+                      {t("about.history.dialog.title")}{" "}
+                      <span className="giga-text-gradient">
+                        {t("about.history.dialog.titleHighlight")}
+                      </span>{" "}
+                      {t("about.titleSuffix")}
                     </DialogTitle>
                     <p className="mt-2 text-center text-sm text-stone-600">
-                      Mais de 25 anos de dedicação à excelência em cosméticos
+                      {t("about.history.dialog.subtitle")}
                     </p>
                   </DialogHeader>
                   <div className="scrollbar-thin scrollbar-track-red-100 scrollbar-thumb-primary hover:scrollbar-thumb-red-700 max-h-[calc(90vh-140px)] overflow-y-auto px-6 py-6">
@@ -189,14 +192,11 @@ export default function QuemSomos() {
                             <span className="text-xl">🎯</span>
                           </div>
                           <h3 className="text-xl font-bold text-stone-900 sm:text-2xl">
-                            Os Primeiros Passos (1998)
+                            {t("about.history.dialog.firstSteps.title")}
                           </h3>
                         </div>
                         <p className="leading-relaxed text-stone-600">
-                          Em julho de 1998, nasceu a La Vitta Cosmética com uma visão
-                          revolucionária: especializar-se exclusivamente na terceirização da
-                          fabricação de esmaltes para unhas. Desde o início, nossa missão foi clara
-                          - não apenas produzir, mas ser parceiros estratégicos de nossos clientes.
+                          {t("about.history.dialog.firstSteps.description")}
                         </p>
                       </motion.div>
 
@@ -212,22 +212,12 @@ export default function QuemSomos() {
                             <span className="text-xl">🚀</span>
                           </div>
                           <h3 className="text-xl font-bold text-stone-900 sm:text-2xl">
-                            Crescimento e Inovação
+                            {t("about.history.dialog.growth.title")}
                           </h3>
                         </div>
                         <div className="space-y-4 text-stone-700">
-                          <p className="leading-relaxed">
-                            Ao longo dos anos, investimos constantemente em pesquisa e
-                            desenvolvimento, acompanhando de perto as tendências globais de beleza.
-                            Nossa equipe técnica trabalha incansavelmente no aprimoramento de
-                            fórmulas, testando novos pigmentos e desenvolvendo cores que capturam o
-                            espírito de cada época.
-                          </p>
-                          <p className="leading-relaxed">
-                            Desenvolvemos expertise em diferentes tipos de acabamentos: desde os
-                            clássicos cremosos até as mais modernas formulações com glitter,
-                            perolados e tratamentos especializados.
-                          </p>
+                          <p className="leading-relaxed">{t("about.history.dialog.growth.p1")}</p>
+                          <p className="leading-relaxed">{t("about.history.dialog.growth.p2")}</p>
                         </div>
                       </motion.div>
 
@@ -243,14 +233,11 @@ export default function QuemSomos() {
                             <span className="text-xl">🌎</span>
                           </div>
                           <h3 className="text-xl font-bold text-stone-900 sm:text-2xl">
-                            Expansão Nacional e Internacional
+                            {t("about.history.dialog.expansion.title")}
                           </h3>
                         </div>
                         <p className="leading-relaxed text-stone-700">
-                          Nossa reputação de qualidade e confiabilidade nos levou além das
-                          fronteiras nacionais. Hoje, atendemos clientes em diversos países, sempre
-                          mantendo os mesmos padrões rigorosos de qualidade que nos tornaram
-                          referência no mercado brasileiro.
+                          {t("about.history.dialog.expansion.description")}
                         </p>
                       </motion.div>
 
@@ -266,21 +253,20 @@ export default function QuemSomos() {
                             <Shield className="h-5 w-5 text-primary" />
                           </div>
                           <h3 className="text-xl font-bold text-stone-900 sm:text-2xl">
-                            Compromisso com a Qualidade
+                            {t("about.history.dialog.certifications.title")}
                           </h3>
                         </div>
                         <p className="mb-4 leading-relaxed text-stone-600">
-                          Possuímos todas as certificações e autorizações necessárias dos órgãos
-                          competentes:
+                          {t("about.history.dialog.certifications.description")}
                         </p>
                         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                           {[
-                            "Conselho Regional de Química (CRQ)",
-                            "Vigilância Sanitária",
-                            "Ministério da Saúde",
-                            "CETESB (Companhia Ambiental)",
-                            "Polícia Federal e Estadual",
-                            "Corpo de Bombeiros",
+                            t("about.history.dialog.certifications.items.0"),
+                            t("about.history.dialog.certifications.items.1"),
+                            t("about.history.dialog.certifications.items.2"),
+                            t("about.history.dialog.certifications.items.3"),
+                            t("about.history.dialog.certifications.items.4"),
+                            t("about.history.dialog.certifications.items.5"),
                           ].map((cert, idx) => (
                             <div
                               key={idx}
@@ -305,26 +291,26 @@ export default function QuemSomos() {
                         <div className="mb-4 flex items-center justify-center gap-2">
                           <span className="text-2xl">📊</span>
                           <h3 className="text-center text-xl font-bold text-stone-900 sm:text-2xl">
-                            Nossos Números
+                            {t("about.history.dialog.numbers.title")}
                           </h3>
                         </div>
                         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
                           <div className="rounded-xl border-2 border-primary/20 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:border-primary hover:shadow-md">
                             <div className="text-4xl font-bold text-primary">25+</div>
                             <div className="mt-1 text-sm font-semibold text-stone-600">
-                              Anos de Experiência
+                              {t("about.history.dialog.numbers.years")}
                             </div>
                           </div>
                           <div className="rounded-xl border-2 border-primary/20 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:border-primary hover:shadow-md">
                             <div className="text-4xl font-bold text-primary">130k+</div>
                             <div className="mt-1 text-sm font-semibold text-stone-600">
-                              Unidades/Dia
+                              {t("about.history.dialog.numbers.unitsDay")}
                             </div>
                           </div>
                           <div className="rounded-xl border-2 border-primary/20 bg-white p-4 text-center shadow-sm transition-all duration-300 hover:border-primary hover:shadow-md">
                             <div className="text-4xl font-bold text-primary">10k+</div>
                             <div className="mt-1 text-sm font-semibold text-stone-600">
-                              Fórmulas Desenvolvidas
+                              {t("about.history.dialog.numbers.formulas")}
                             </div>
                           </div>
                         </div>
@@ -342,20 +328,15 @@ export default function QuemSomos() {
                             <span className="text-xl">💡</span>
                           </div>
                           <h3 className="text-xl font-bold text-stone-900 sm:text-2xl">
-                            Nossa Filosofia
+                            {t("about.history.dialog.philosophy.title")}
                           </h3>
                         </div>
                         <div className="space-y-4 text-stone-600">
                           <p className="leading-relaxed">
-                            Optamos conscientemente por não ter marca própria, mantendo nosso foco
-                            total na terceirização. Esta decisão estratégica nos permite dedicar
-                            100% de nossa energia e recursos ao sucesso de nossos parceiros.
+                            {t("about.history.dialog.philosophy.p1")}
                           </p>
                           <p className="leading-relaxed">
-                            Cada projeto é único, desenvolvido de forma personalizada para atender
-                            às necessidades específicas e metas de mercado de cada cliente. Não
-                            fabricamos apenas esmaltes - construímos sonhos e ajudamos marcas a se
-                            destacarem no competitivo universo da beleza.
+                            {t("about.history.dialog.philosophy.p2")}
                           </p>
                         </div>
                       </motion.div>
@@ -384,7 +365,9 @@ export default function QuemSomos() {
               <div className="absolute -right-6 -bottom-6 rounded-2xl bg-white p-6 shadow-xl">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-primary">25+</div>
-                  <div className="text-sm font-semibold text-stone-600">Anos</div>
+                  <div className="text-sm font-semibold text-stone-600">
+                    {t("about.history.years")}
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -403,10 +386,11 @@ export default function QuemSomos() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              Nossos <span className="text-primary">Valores</span>
+              {t("about.valuesSection.title")}{" "}
+              <span className="text-primary">{t("about.valuesSection.titleHighlight")}</span>
             </h2>
             <p className="mx-auto max-w-2xl text-base text-stone-600 sm:text-lg">
-              Princípios que guiam cada decisão e cada produto que desenvolvemos
+              {t("about.valuesSection.subtitle")}
             </p>
           </div>
 
@@ -449,13 +433,18 @@ export default function QuemSomos() {
           <div className="mb-12 text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
               <Shield className="h-5 w-5 text-primary" />
-              <span className="text-sm font-semibold text-primary">Qualidade Certificada</span>
+              <span className="text-sm font-semibold text-primary">
+                {t("about.certificationsSection.badge")}
+              </span>
             </div>
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              Compromisso com a <span className="text-primary">Excelência</span>
+              {t("about.certificationsSection.title")}{" "}
+              <span className="text-primary">
+                {t("about.certificationsSection.titleHighlight")}
+              </span>
             </h2>
             <p className="mx-auto max-w-2xl text-base text-stone-600 sm:text-lg">
-              Todas as autorizações e certificações necessárias para garantir segurança e qualidade
+              {t("about.certificationsSection.subtitle")}
             </p>
           </div>
 
@@ -494,7 +483,8 @@ export default function QuemSomos() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              Missão, Visão e <span className="text-primary">Valores</span>
+              {t("about.missionVisionValues.title")}{" "}
+              <span className="text-primary">{t("about.missionVisionValues.titleHighlight")}</span>
             </h2>
           </div>
 
@@ -504,10 +494,11 @@ export default function QuemSomos() {
                 <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                   <Target className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="mb-4 text-2xl font-bold text-stone-900">Missão</h3>
+                <h3 className="mb-4 text-2xl font-bold text-stone-900">
+                  {t("about.missionVisionValues.mission.title")}
+                </h3>
                 <p className="text-stone-600">
-                  Proporcionar produtos cosméticos de alta qualidade que realcem a beleza natural de
-                  cada pessoa, promovendo autoestima e bem-estar.
+                  {t("about.missionVisionValues.mission.description")}
                 </p>
               </CardContent>
             </Card>
@@ -517,10 +508,11 @@ export default function QuemSomos() {
                 <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-rose-100">
                   <Eye className="h-8 w-8 text-rose-500" />
                 </div>
-                <h3 className="mb-4 text-2xl font-bold text-stone-900">Visão</h3>
+                <h3 className="mb-4 text-2xl font-bold text-stone-900">
+                  {t("about.missionVisionValues.vision.title")}
+                </h3>
                 <p className="text-stone-600">
-                  Ser reconhecida como a marca de cosméticos mais confiável e inovadora do Brasil,
-                  presente na vida de milhões de pessoas.
+                  {t("about.missionVisionValues.vision.description")}
                 </p>
               </CardContent>
             </Card>
@@ -530,10 +522,11 @@ export default function QuemSomos() {
                 <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
                   <Heart className="h-8 w-8 text-blue-500" />
                 </div>
-                <h3 className="mb-4 text-2xl font-bold text-stone-900">Valores</h3>
+                <h3 className="mb-4 text-2xl font-bold text-stone-900">
+                  {t("about.missionVisionValues.values.title")}
+                </h3>
                 <p className="text-stone-600">
-                  Qualidade, inovação, sustentabilidade, respeito ao cliente e compromisso com a
-                  beleza natural e saudável.
+                  {t("about.missionVisionValues.values.description")}
                 </p>
               </CardContent>
             </Card>
@@ -619,10 +612,11 @@ export default function QuemSomos() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              Nossos <span className="text-primary">Produtos</span>
+              {t("about.productsSection.title")}{" "}
+              <span className="text-primary">{t("about.productsSection.titleHighlight")}</span>
             </h2>
             <p className="mx-auto max-w-2xl text-base text-stone-600 sm:text-lg">
-              Diversidade e qualidade em cada fórmula desenvolvida
+              {t("about.productsSection.subtitle")}
             </p>
           </div>
 
@@ -660,25 +654,23 @@ export default function QuemSomos() {
       >
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            Gostou de conhecer nossa história?
+            {t("about.finalCta.title")}
           </h2>
-          <p className="mb-8 text-lg text-red-100 sm:text-xl">
-            Entre em contato conosco e descubra como podemos ajudar sua marca a crescer!
-          </p>
+          <p className="mb-8 text-lg text-red-100 sm:text-xl">{t("about.finalCta.subtitle")}</p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
             <WhatsAppButton
               variant="inline"
               size="lg"
-              message="Olá! Acabei de conhecer a história da La Vitta Cosmética e gostaria de saber mais."
+              message={t("about.finalCta.whatsappMessage")}
               className="bg-white text-green-600 hover:bg-stone-50"
-              />       
+            />
             <Button
               asChild
               size="lg"
               variant="outline"
               className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-primary"
             >
-              <Link href="/contato">Enviar E-mail</Link>
+              <Link href="/contato">{t("about.finalCta.emailButton")}</Link>
             </Button>
           </div>
         </div>

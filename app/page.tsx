@@ -10,6 +10,7 @@ import { ContentCarousel } from "@/components/content-carousel"
 import { ProductionCarousel, ProductionSlide } from "@/components/production-caroussel"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { useLanguage } from "@/hooks/use-language"
 import image1 from "@/public/clients/1.png"
 import image2 from "@/public/clients/2.png"
 import image3 from "@/public/clients/3.png"
@@ -42,6 +43,8 @@ import image29 from "@/public/clients/29.png"
 import image30 from "@/public/clients/30.png"
 
 export default function Home() {
+  const { t } = useLanguage()
+
   const partnersImages = [
     image1,
     image2,
@@ -77,26 +80,26 @@ export default function Home() {
   const services = [
     {
       number: "01",
-      title: "Assessoria Completa",
-      description: "Orientação tributária, exportação e regularização ANVISA",
+      title: t("home.services.advisory.title"),
+      description: t("home.services.advisory.description"),
       icon: Target,
     },
     {
       number: "02",
-      title: "Controle de Qualidade",
-      description: "Processos rigorosos garantindo excelência em cada produto",
+      title: t("home.services.quality.title"),
+      description: t("home.services.quality.description"),
       icon: Award,
     },
     {
       number: "03",
-      title: "Pesquisa e Desenvolvimento",
-      description: "Inovação constante com as últimas tendências do mercado",
+      title: t("home.services.research.title"),
+      description: t("home.services.research.description"),
       icon: TrendingUp,
     },
     {
       number: "04",
-      title: "Fabricação e Envase",
-      description: "Infraestrutura moderna para produção em larga escala",
+      title: t("home.services.manufacturing.title"),
+      description: t("home.services.manufacturing.description"),
       icon: CheckCircle,
     },
   ]
@@ -104,23 +107,23 @@ export default function Home() {
   const benefits = [
     {
       icon: Award,
-      title: "25+ Anos de Experiência",
-      description: "Tradição e expertise no mercado de cosméticos para unhas",
+      title: t("home.benefits.experience.title"),
+      description: t("home.benefits.experience.description"),
     },
     {
       icon: CheckCircle,
-      title: "Certificações Completas",
-      description: "Todas as autorizações CRQ, ANVISA, CETESB e mais",
+      title: t("home.benefits.certifications.title"),
+      description: t("home.benefits.certifications.description"),
     },
     {
       icon: Users,
-      title: "Parceria Estratégica",
-      description: "Foco 100% no sucesso dos nossos clientes",
+      title: t("home.benefits.partnership.title"),
+      description: t("home.benefits.partnership.description"),
     },
     {
       icon: TrendingUp,
-      title: "Inovação Constante",
-      description: "Acompanhamento das tendências globais de beleza",
+      title: t("home.benefits.innovation.title"),
+      description: t("home.benefits.innovation.description"),
     },
   ]
 
@@ -141,13 +144,13 @@ export default function Home() {
   ]
 
   const carouselPhrases = [
-    "Assessoria tributária",
-    "Orientação para a exportação",
-    "Assessoria para lançamento de produtos",
-    "Auxílio na identidade visual e design",
-    "Regularização da ANVISA",
-    "Assessoria no registro de marca",
-    "Suporte na tomada de decisões",
+    t("home.advisory.items.tax"),
+    t("home.advisory.items.export"),
+    t("home.advisory.items.launch"),
+    t("home.advisory.items.design"),
+    t("home.advisory.items.anvisa"),
+    t("home.advisory.items.brand"),
+    t("home.advisory.items.support"),
   ]
 
   return (
@@ -169,27 +172,26 @@ export default function Home() {
               className="space-y-6 text-center lg:text-left"
             >
               <div className="inline-block rounded-full bg-primary/10 px-4 py-2">
-                <span className="text-sm font-semibold text-primary">
-                  🏆 Referência Nacional há 25+ anos
-                </span>
+                <span className="text-sm font-semibold text-primary">{t("home.hero.badge")}</span>
               </div>
 
               <h1 className="text-4xl leading-tight font-extrabold text-stone-900 sm:text-5xl lg:text-6xl">
-                Transforme sua marca com a <br></br>
-                <span className="giga-text-gradient">La Vitta</span>
+                {t("home.hero.title")} <br></br>
+                <span className="giga-text-gradient">{t("home.hero.titleHighlight")}</span>
               </h1>
 
               <p className="text-lg leading-relaxed text-stone-600 sm:text-xl">
-                Terceirização completa de esmaltes e produtos para unhas. Da concepção à entrega,
-                oferecemos <span className="font-bold text-primary">qualidade excepcional</span> e{" "}
-                <span className="font-bold text-primary">inovação constante</span> para o sucesso da
-                sua marca.
+                {t("home.hero.description")}{" "}
+                <span className="font-bold text-primary">{t("home.hero.quality")}</span>{" "}
+                {t("home.hero.and")}{" "}
+                <span className="font-bold text-primary">{t("home.hero.innovation")}</span>{" "}
+                {t("home.hero.forSuccess")}
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
                 <Button asChild size="lg" className="group text-base font-bold sm:text-lg">
                   <Link href="/contato">
-                    Solicite um Orçamento
+                    {t("home.hero.ctaQuote")}
                     <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
                   </Link>
                 </Button>
@@ -199,7 +201,7 @@ export default function Home() {
                   size="lg"
                   className="text-base font-bold sm:text-lg"
                 >
-                  <Link href="/quem-somos">Conheça Nossa História</Link>
+                  <Link href="/quem-somos">{t("home.hero.ctaAbout")}</Link>
                 </Button>
               </div>
 
@@ -207,15 +209,17 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-4 pt-6">
                 <div className="text-center lg:text-left">
                   <div className="text-2xl font-bold text-primary sm:text-3xl">130k+</div>
-                  <div className="text-xs text-stone-600 sm:text-sm">unidades/dia</div>
+                  <div className="text-xs text-stone-600 sm:text-sm">
+                    {t("home.hero.unitsPerDay")}
+                  </div>
                 </div>
                 <div className="text-center lg:text-left">
                   <div className="text-2xl font-bold text-primary sm:text-3xl">10k+</div>
-                  <div className="text-xs text-stone-600 sm:text-sm">fórmulas</div>
+                  <div className="text-xs text-stone-600 sm:text-sm">{t("home.hero.formulas")}</div>
                 </div>
                 <div className="text-center lg:text-left">
                   <div className="text-2xl font-bold text-primary sm:text-3xl">25+</div>
-                  <div className="text-xs text-stone-600 sm:text-sm">anos</div>
+                  <div className="text-xs text-stone-600 sm:text-sm">{t("home.hero.years")}</div>
                 </div>
               </div>
             </motion.div>
@@ -236,8 +240,10 @@ export default function Home() {
                 <div className="absolute bottom-6 left-6 flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-lg backdrop-blur-sm">
                   <Sparkles className="h-5 w-5 text-primary" />
                   <div>
-                    <div className="text-sm font-bold text-stone-900">100% Dedicados</div>
-                    <div className="text-xs text-stone-600">à terceirização</div>
+                    <div className="text-sm font-bold text-stone-900">
+                      {t("home.hero.dedicated")}
+                    </div>
+                    <div className="text-xs text-stone-600">{t("home.hero.toOutsourcing")}</div>
                   </div>
                 </div>
               </div>
@@ -257,10 +263,11 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              Por que escolher a <span className="text-primary">La Vitta</span>?
+              {t("home.benefits.title")}{" "}
+              <span className="text-primary">{t("home.benefits.titleHighlight")}</span>?
             </h2>
             <p className="mx-auto max-w-2xl text-base text-stone-600 sm:text-lg">
-              Somos mais que um fornecedor, somos seu parceiro estratégico no mercado de beleza
+              {t("home.benefits.subtitle")}
             </p>
           </div>
 
@@ -302,10 +309,11 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              Nossos <span className="text-primary">Serviços</span>
+              {t("home.services.title1")}{" "}
+              <span className="text-primary">{t("home.services.title2")}</span>
             </h2>
             <p className="mx-auto max-w-2xl text-base text-stone-600 sm:text-lg">
-              Soluções completas e personalizadas para o sucesso da sua marca no mercado
+              {t("home.services.subtitle")}
             </p>
           </div>
 
@@ -345,7 +353,7 @@ export default function Home() {
 
           <div className="mt-12 text-center">
             <Button asChild size="lg" className="text-base font-bold sm:text-lg">
-              <Link href="/contato">Terceirize com a La Vitta →</Link>
+              <Link href="/contato">{t("home.services.button")} →</Link>
             </Button>
           </div>
         </div>
@@ -362,10 +370,11 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center md:px-6">
           <div className="mb-12">
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              Nossa <span className="text-primary">Produção</span>
+              {t("home.production.title1")}{" "}
+              <span className="text-primary">{t("home.production.title2")}</span>
             </h2>
             <p className="mx-auto max-w-2xl text-base text-stone-600 sm:text-lg">
-              Tecnologia de ponta e processos modernos para garantir qualidade excepcional
+              {t("home.production.subtitle")}
             </p>
           </div>
           <ProductionCarousel slides={productionSlides} />
@@ -394,10 +403,12 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              A <span className="text-primary">La Vitta</span> em números
+              {t("home.numbers.title1")}{" "}
+              <span className="text-primary">{t("home.numbers.title2")}</span>{" "}
+              {t("home.numbers.title3")}
             </h2>
             <p className="mx-auto max-w-2xl text-base text-stone-600 sm:text-lg">
-              Números que comprovam nossa excelência e compromisso com o mercado
+              {t("home.numbers.subtitle")}
             </p>
           </div>
 
@@ -419,11 +430,9 @@ export default function Home() {
                     className="mb-2 block text-4xl font-bold text-primary sm:text-5xl lg:text-6xl"
                   />
                   <p className="text-base font-semibold text-stone-900 sm:text-lg">
-                    unidades por turno por dia
+                    {t("home.numbers.unitsPerShift")}
                   </p>
-                  <p className="mt-2 text-sm text-stone-600">
-                    Capacidade produtiva de alta performance
-                  </p>
+                  <p className="mt-2 text-sm text-stone-600">{t("home.numbers.capacityDesc")}</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -445,9 +454,9 @@ export default function Home() {
                     className="mb-2 block text-4xl font-bold text-primary sm:text-5xl lg:text-6xl"
                   />
                   <p className="text-base font-semibold text-stone-900 sm:text-lg">
-                    fórmulas exclusivas
+                    {t("home.numbers.exclusiveFormulas")}
                   </p>
-                  <p className="mt-2 text-sm text-stone-600">Diversidade e inovação em produtos</p>
+                  <p className="mt-2 text-sm text-stone-600">{t("home.numbers.diversityDesc")}</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -469,9 +478,11 @@ export default function Home() {
                     className="mb-2 block text-4xl font-bold text-primary sm:text-5xl lg:text-6xl"
                   />
                   <p className="text-base font-semibold text-stone-900 sm:text-lg">
-                    m² de área fabril
+                    {t("home.numbers.factoryArea")}
                   </p>
-                  <p className="mt-2 text-sm text-stone-600">Infraestrutura moderna e completa</p>
+                  <p className="mt-2 text-sm text-stone-600">
+                    {t("home.numbers.infrastructureDesc")}
+                  </p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -490,10 +501,12 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-stone-900 sm:text-4xl lg:text-5xl">
-              Marcas que <span className="text-primary">confiam</span> em nós
+              {t("home.clients.title1")}{" "}
+              <span className="text-primary">{t("home.clients.title2")}</span>{" "}
+              {t("home.clients.title3")}
             </h2>
             <p className="mx-auto max-w-2xl text-base text-stone-600 sm:text-lg">
-              Parceiros de sucesso que escolheram a La Vitta para impulsionar seus negócios
+              {t("home.clients.subtitle")}
             </p>
           </div>
 
@@ -521,11 +534,9 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="mb-6 text-lg font-semibold text-stone-700">
-              Quer fazer parte dessa lista de sucesso?
-            </p>
+            <p className="mb-6 text-lg font-semibold text-stone-700">{t("home.clients.cta")}</p>
             <Button asChild size="lg" className="text-base font-bold sm:text-lg">
-              <Link href="/contato">Fale com nosso time →</Link>
+              <Link href="/contato">{t("home.clients.ctaButton")} →</Link>
             </Button>
           </div>
         </div>
@@ -548,16 +559,15 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="mb-6 inline-block rounded-full bg-white/20 px-4 py-2">
-              <span className="text-sm font-semibold text-white">✨ Transforme sua marca hoje</span>
+              <span className="text-sm font-semibold text-white">{t("home.cta.badge")}</span>
             </div>
 
             <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-              Pronto para levar sua marca ao próximo nível?
+              {t("home.cta.title")}
             </h2>
 
             <p className="mb-8 text-base text-white/90 sm:text-lg lg:text-xl">
-              Entre em contato com nosso time de especialistas e descubra como a La Vitta pode
-              transformar suas ideias em produtos de sucesso no mercado de beleza.
+              {t("home.cta.subtitle")}
             </p>
 
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
@@ -567,7 +577,7 @@ export default function Home() {
                 variant="inverted"
                 className="text-base font-bold sm:text-lg"
               >
-                <Link href="/contato">Solicitar Orçamento</Link>
+                <Link href="/contato">{t("home.cta.button")}</Link>
               </Button>
               <Button
                 asChild
@@ -575,7 +585,7 @@ export default function Home() {
                 variant="outline"
                 className="border-2 border-white bg-transparent text-base font-bold text-white hover:bg-white hover:text-primary sm:text-lg"
               >
-                <Link href="/quem-somos">Nossa História</Link>
+                <Link href="/quem-somos">{t("home.cta.buttonAlt")}</Link>
               </Button>
             </div>
           </motion.div>
